@@ -712,26 +712,126 @@
 <script>
 // ─── DATA ───────────────────────────────────────────────────────────────
 const rows = [
-  { id:1,  category:"North Fence line(Road side)",  item:"Plant new (privacy) trees on the ROAD side( Arborvitae Emerald Green - 8 feet tall - 30- 50 trees", img:"IMG_1" },
-  { id:2,  category:"WEST fence line",              item:"New concrete walkway by the WEST fence line",  img:"IMG_2A" },
-  { id:3,  category:"WEST fence line",              item:"Plant new (shade) trees by the WEST fence line beside NEW Walkway - 28 trees- California Live Oak or similar", img:"IMG_2D" },
-  { id:4,  category:"WEST fence line",              item:"Way of cross station between every other tree - newly planted (shade) trees by the WEST fence line beside NEW Walkway", img:"IMG_2B" },
-  { id:5,  category:"WEST fence line",              item:"Bougainvillea / climbing rose / any suitable for privacy wall by the WEST fence line - 440 feet ",  img:"IMG_2" },
-  { id:6,  category:"WEST fence line",              item:"Climbing structure - for Bougainvillea / climbing rose / any suitable for privacy wall by the WEST fence line",  img:"IMG_3" },
-  { id:7,  category:"EAST fence line",              item:"Plant new (privacy) trees / Bougainvillea  by the EAST fence line to all the way to the end of fence line",  img:"IMG_4" },
-  { id:8,  category:"South(BACK)fence line",        item:"Plant new (privacy) trees / Bougainvillea  by the BACK fence line",  img:"IMG_5" },
-  { id:9,  category:"Picnic Ground",                item:"Plant new (shade) trees in the ground for Church Picnic - 20 trees- California Live Oak or similar", img:"IMG_6" },
-  { id:10, category:"School lawn",                  item:"School lawn - prepare for events - Clean up - concrete - paint the stage - set up Two courts(badminton/pickleball) - canvas canopy",  img:"IMG_7" },
-  { id:11, category:"School lawn",                  item:"Set up round platforms around the tree with electric and water connection -  play area - playhouse - swings", img:"IMG_7B" },
-  { id:12, category:"School lawn",                  item:"Nursing station(integrated or stand alone storage shed converted)",  img:"IMG_8" },
-  { id:13, category:"School lawn & Picnic ground",  item:"School lawn to picnic ground  area -  concrete or tile path way",  img:"IMG_9" },
-  { id:14, category:"School lawn & Church lawn",    item:"Church lawn to school lawn - concrete or tile path way",  img:"IMG_10" },
-  { id:15, category:"Church lawn",                  item:"Church lawn - prepare for events - Two portable stages - one in the front and another behind the Room#102", img:"IMG_11A" },
-  { id:16, category:"Church lawn",                  item:"Concrete (wider) path way - behind Room #101, 102, 103, 104, 105",  img:"IMG_11B" },
-  { id:17, category:"Church lawn",                  item:"Concrete the path way - front(East) to the Choir door of the Church", img:"IMG_11" },
-  { id:18, category:"Church lawn",                  item:"Tree - install gratings around the tree adjoint to the concrete path way", img:"IMG_11" },
-  { id:19, category:"Church lawn",                  item:"Plant - graceful Bamboo by the concrete walkway behind Room #101, 102, 103, 104, 105 (10'-15' Feet Tall Bamboo) and Bougainvillea if needed", img:"IMG_2C" },
-  { id:20, category:"Church lawn",                  item:"Install two Shuttle badminton courts and Bougainvillea if needed ", img:"IMG_2E" },
+  {
+    id: 1,
+    category: "North Fence Line (Roadside)",
+    item: "Installation of 30–50 Emerald Green Arborvitae (8' height) for roadside privacy screening.",
+    img: "IMG_1"
+  },
+  {
+    id: 2,
+    category: "West Fence Line",
+    item: "Construction of a new concrete walkway along the western fence line.",
+    img: "IMG_2A"
+  },
+  {
+    id: 3,
+    category: "West Fence Line",
+    item: "Planting of 28 shade trees (Saratoga' Bay Laurel or similar) adjacent to the new western walkway.",
+    img: "IMG_2D"
+  },
+  {
+    id: 4,
+    category: "West Fence Line",
+    item: "Installation of 'Way of the Cross' stations at alternating intervals along the western walkway.",
+    img: "IMG_2B"
+  },
+  {
+    id: 5,
+    category: "West Fence Line",
+    item: "Installation of 440 linear feet of climbing privacy greenery (Bougainvillea or Climbing Roses).",
+    img: "IMG_2"
+  },
+  {
+    id: 6,
+    category: "West Fence Line",
+    item: "Construction of a dedicated climbing support structure for western fence privacy plants.",
+    img: "IMG_3"
+  },
+  {
+    id: 7,
+    category: "East Fence Line",
+    item: "Plant Bougainvillea along the full length of the eastern fence line.",
+    img: "IMG_4"
+  },
+  {
+    id: 8,
+    category: "South Fence Line (Rear)",
+    item: "Plant privacy trees and Bougainvillea along the rear fence line.",
+    img: "IMG_5"
+  },
+  {
+    id: 9,
+    category: "Picnic Grounds",
+    item: "Planting of 20 shade trees (CarrotWood or Saratoga' Bay Laurel) within the Church picnic area.",
+    img: "IMG_6"
+  },
+  {
+    id: 10,
+    category: "School Lawn",
+    item: "Event preparation: Site cleanup, concrete surfacing, stage painting, dual-court setup, and canopy installation.",
+    img: "IMG_7"
+  },
+  {
+    id: 11,
+    category: "School Lawn",
+    item: "Construction of round tree platforms with integrated utility (water/electric) for the play area.",
+    img: "IMG_7B"
+  },
+  {
+    id: 12,
+    category: "School Lawn",
+    item: "Installation of a dedicated nursing station via a converted or integrated storage structure.",
+    img: "IMG_8"
+  },
+  {
+    id: 13,
+    category: "School & Picnic Connection",
+    item: "Installation of a concrete or tiled pedestrian pathway connecting the school lawn and picnic grounds.",
+    img: "IMG_9"
+  },
+  {
+    id: 14,
+    category: "School & Church Connection",
+    item: "Installation of a concrete or tiled pedestrian pathway connecting the church and school lawns.",
+    img: "IMG_10"
+  },
+  {
+    id: 15,
+    category: "Church Lawn",
+    item: "Event preparation: Provision of two portable stages located at the front and rear of Room #102.",
+    img: "IMG_11A"
+  },
+  {
+    id: 16,
+    category: "Church Lawn",
+    item: "Construction of a widened concrete pathway behind Rooms #101 through #105.",
+    img: "IMG_11B"
+  },
+  {
+    id: 17,
+    category: "Church Lawn",
+    item: "Paving of the concrete walkway from the eastern entrance to the Church choir door.",
+    img: "IMG_11"
+  },
+  {
+    id: 18,
+    category: "Church Lawn",
+    item: "Installation of protective tree gratings for specimens adjacent to new concrete pathways.",
+    img: "IMG_11"
+  },
+  {
+    id: 19,
+    category: "Church Lawn",
+    item: "Landscaping: Graceful Bamboo (10'–15') and Bougainvillea behind Rooms #101 through #105.",
+    img: "IMG_2C"
+  },
+  {
+    id: 20,
+    category: "Church Lawn",
+    item: "Installation of two  shuttle badminton courts with integrated landscaping.",
+    img: "IMG_2E"
+  },
 ];
 
 // Map IMG prefix to actual image files
